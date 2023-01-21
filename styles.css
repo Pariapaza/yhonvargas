@@ -1,0 +1,459 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;400;500;600;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Heebo', sans-serif;
+}
+/* h1, h2, p{
+    font-size: 12px;
+    margin-bottom: 2px;
+} */
+/* =========BARRA DE SCROLLBAR============= */
+::-webkit-scrollbar{
+    width: 9px;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 4px;
+    background: linear-gradient(transparent, #0f2b3d);
+    background-color: #2250b3;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(transparent, #f56200);
+}
+/* ========barra de navegación=========== */
+.navbar{
+    width: 100%;
+    height: auto;
+    background-color: #01485e;
+    display: block;
+    box-shadow: 0px 0px 5px #0000008f;  
+}
+.logo-txt{
+    width: auto;
+    height: auto;
+    font-size: 23px;
+    color: #dfdfdf;
+    font-weight: 900;
+}
+.logo-txt strong{
+    color: #d8e610;
+    font-weight: 400;
+    font-size: 20px;
+}
+.logo-txt i{
+    font-size: 25px;
+    padding-right: 2px;
+    color: #d8e610;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fcfcfc;
+    border: 1px solid #fff;
+}
+.logo img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+.sesion{
+    width: 190px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.sesion input{
+    width: 120px;
+    height: 28px;
+    background-color: #f56200;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    /* box-shadow: 0px 2px 10px 0px #000; */
+}
+.sesion input:hover{
+    background-color: #e68910;
+    transition: 0.3s;
+}
+.navbar .max-width{
+    height: 63px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.menu{
+    display: flex;
+    list-style: none;
+    width: 360px;
+    justify-content: end;
+}
+.menu li a{
+    display: block;
+    margin-left: 15px;
+    color: #d4d4d4;
+    text-decoration: none;
+}
+.menu a:hover{
+    color: white;
+}
+.menu-btn{
+    display: none;
+    color: white;
+}
+/* ========================================= */
+
+/* =============ANIMACIONES DE IMG================ */
+.content-anime{
+    width: 100%;
+    height: auto;
+    /* background-color: #008cff; */
+    display:flex ;
+}
+.content-item{
+    width: 60%;
+    height: auto;
+    padding: 0 5px 0 75px;
+    padding-top: 50px;
+}
+.titulo-curso{
+    width: 60%;
+    font-size: 13px;
+    padding-bottom: 15px;
+}
+.graficos{  
+    width: 45%;
+    height: 560px;
+    display: flex;
+    flex-direction: column;
+}
+.item-grafic{
+    width: 60%;
+    height: 60%;
+    /* margin: 50px 50px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.imagenes{
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+.imagenes .img_1{
+    animation: rot 35s infinite linear reverse;
+    width: 280px;
+    height: 280px;
+    
+}
+.imagenes .img_2{
+    animation: rot 35s infinite linear;
+    width: 210px;
+    height: 210px
+    
+}
+.imagenes .img_3{
+    animation: rot 15s infinite linear reverse;
+    width: 150px;
+    height: 150px
+    
+}
+.imagenes .img_4{
+    width: 45px;
+    height: 45px
+
+}
+/* ===== TEMARIOS ===== */
+.temarios{
+    
+}
+.temarios h3{
+    color: #464646;
+    font-weight: 400;
+}
+.cursos{
+    margin: 7px 0;
+}
+.titulo-tema{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 3px;
+    padding: 3px 10px;
+    font-size: 10px;
+    color: #ffffff;
+    background-color: #4b5ae7;
+}
+.titulo-tema h2{
+    font-weight: 400;
+}
+.titulo-tema>h2 i{
+    font-size: 20px;
+}
+.titulo-tema button{
+    border: none;
+    cursor: pointer;
+    background: none;
+    color: white;
+}
+.item-tema{
+    display: none;
+    width: 50%;
+    padding: 4px 10px;
+    background-color: #dbdbdb;
+    font-size: 13px;
+}
+.item-tema1{
+    width: 50%;
+    padding: 4px 10px;
+    background-color: #dbdbdb;
+    font-size: 13px;
+}
+/* ======== Enviar base de datos ========= */
+.enviar-data{
+    width: 100%;
+    height: auto;
+    font-size: 12px;
+}
+.enviar-data h1{
+    font-size: 16px;
+    margin: 5px 0;
+}
+.formulario{
+    width: 80%;
+    height: auto;
+    padding: 32px 15px;
+    background-color: #4b5ae7;
+    border-radius: 5px;
+    color: white;
+} 
+.formulario form{
+    margin: 5px;
+}
+.formulario input{
+    width: 100%;
+    margin: 5px;
+}
+.formulario .in{
+    border: none;
+    background: none;
+    outline: none;
+    border-bottom: 1.9px solid #e08b1a;
+    color: #cecece;  
+}
+.btn-sub button{
+    width: 100%;
+    height: 30px;
+    margin-top: 9px;
+    border: none;
+    border-radius: 2px;
+    font-size: 17px;
+    color: white;
+    cursor: pointer;
+    background-color: #e68910;
+}
+/* ======= contacto de whatsapp ======== */
+.contactos{
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 15px 5px 15px 75px;
+}
+.wats{
+    width: 55%;
+    display: flex;
+    gap: 30px;
+}
+.wats h1{
+    font-size: 20px;
+    margin: 5px;
+}
+.wats a{
+    width: 150px;
+    height: 30px;
+    display: flex;
+    color: white;
+    align-items: center;
+    border-radius: 15px;
+    background: #09d802;
+    text-decoration: none;
+    padding: 5px;
+}
+.wats a i{
+    padding-left: 15px;
+    font-size: 20px;
+}
+.wats a:hover{   
+    border: 2px solid #00cf0a;
+    background:none;
+    color: #2c2c2c;
+    text-align: center;
+}
+.info h1{
+    font-size: 20px;
+
+}
+/* .wats a:before{
+     content: "\f232";
+} */
+@keyframes rot{
+    100% {
+        transform: rotate(360deg);
+    }    
+}
+@media screen and (max-width: 500px){
+
+    .imagenes .img_1{
+        width: 300px;
+        height: 300px;
+    }
+    .imagenes .img_2{
+        width: 220px;
+        height: 220px;
+    }
+    .imagenes .img_3{
+        width: 130px;
+        height: 130px;
+    }
+    .imagenes .img_4{
+        width: 50px;
+        height: 50px
+    }    
+}
+/* ======================================== */
+
+/* ===============TEXTOS=============== */
+
+/* =================RESPONSIVE======================= */
+@media screen and (max-width: 593px) {
+
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+    
+    .navbar .menu{
+        position: fixed;
+        width: 300px;
+        height:360px;
+        top: 63px;
+        left: -300px;
+        z-index: 999;
+        display: flex;
+        align-items: center;
+        justify-content:space-around;
+        flex-direction: column;
+        background-color: #313131;
+        padding-bottom: 150px;
+        transition: 0.3s;
+    }
+    .navbar .menu.active{
+        left: 0;
+    }
+    li{
+        
+        margin-top: 12px;
+    }
+    .menu li a{
+        
+        color:#ffffff ;
+    }
+    .menu-btn{
+        display: flex;
+    }
+    .sesion{
+        display: none;
+    }
+    
+}
+/* ==== Resposive para movil ===== */
+@media (max-width: 550px) {
+    .content-anime{
+        width: 100%;
+        flex-direction: column;
+    }
+    .content-item{
+        width: 100%;
+        padding: 15px;
+    }    
+    .titulo-tema{
+        width: 100%;
+    }
+    .cursos{
+        margin: 8px 20px;
+    }
+    .item-tema{
+        width: 100%;
+    }
+    .item-tema1{
+        width: 100%;
+    }
+    .titulo-curso{
+        width: 80%;
+        margin: 0 20px;
+    }
+    .temarios h3{
+        margin-left: 15px;
+    }
+    .item-grafic{
+        display: none;
+    }
+    .graficos{
+        width: auto;
+        height: auto;
+        display: block;
+        margin: 5px 20px;
+        padding: 15px;
+    }
+    .formulario{
+        width: 100%;
+    }
+    .contactos{
+        display: flex;
+        flex-direction: column;
+    }
+    .wats{
+        width: 100%;
+        display: block;                
+    }
+    .pago-info{
+        padding-top: 15px;
+    }
+}
+/* ======= footer ====== */
+footer{
+    padding-top: 15px;
+    width: 100%;
+    height: 150px;
+    background-color: #0f2b3d;
+}
+.textos{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.textos h3{
+    padding: 10px 0;
+    font-size: 16px;
+    color: white;
+    font-weight: 200;
+}
+.textos a{
+    text-decoration: underline;
+    color: #008cff;
+    font-size: 13px;
+}
+.textos p{
+    color: white;
+    font-weight: 200;
+    font-size: 13px;
+}
